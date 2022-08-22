@@ -1,0 +1,41 @@
+body {
+    height: auto;
+    font-style: 12px;
+    font-family: Roboto;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    overflow: scroll;
+}
+
+section {
+    @media screen and (max-width: 767px) {
+max-width: 767px;
+padding-top: 10px;
+    }
+    @media screen and (min-width: 768px) {   
+min-width: 768px;     
+padding-top: 40px;
+    }
+    @media screen and (min-width: 1400px) {
+max-width: 1400px;
+padding-top: 40px;
+    }
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
