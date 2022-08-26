@@ -76,13 +76,13 @@
     /*cosial*/
 
     /*header-menu*/
-    @media screen and (max-width: 767.9px) {    
+   /* @media screen and (max-width: 767.9px) {    */
         .main-div {       
             display: inline-flex;
             position: relative;
             align-items: center;
             justify-content: space-around;
-            width: 100%;
+            width: 100%;          
         }
              
         .header-menu__navigatio {
@@ -96,7 +96,7 @@
             margin-bottom: 32px;
         }
         .site-nav__link {
-             display: none;
+         
                 color: var(--text-color);
                 font-family: inherit;  
                 font-weight: 500;
@@ -111,7 +111,7 @@
             .site-nav__link--current {
                 color: var(--accent-text);
             }
-    }    
+       
         .header-menu__btn {              
             display: inline-flex;
             cursor: pointer;     
@@ -506,6 +506,8 @@
         width: 100%;
         height: 65px; 
         background-color: #ffffff;
+        box-shadow: 0px 6px 6px 0px #0F2E9E40;
+        
     }
   
     .header-nav {
@@ -539,7 +541,7 @@
 
 .header-nav__link.current::after{
     position: absolute;
-    bottom: -1px;
+    bottom: -0.5px;
     left: 0;
     content: '';
     display: block;
@@ -867,8 +869,7 @@
    }
     .box-logo {
         display: block;
-        padding: 20px;
-        margin-left: 20px;
+        padding: 20px;        
     }
    
         .contact__list {
@@ -963,10 +964,71 @@
     .contact {
         margin-left: 50px;
     }
-    
-    /*header-teo/
-    
+       
 
     /*about*/
+    .user-container {
+       text-align: center;  
+    }
+    .user-container__title {
+        color: var(--accent-bc);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.17;
+        text-align: center;        
+        margin-bottom: 60px;
+    }
+    .user-title {
+        color: var(--accent-text);
+        font-size: 28px;
+        line-height: 1.17;
+        font-weight: 700;
+        text-align: center;
+    }
+    .player {
+        display: block;
+        width: 260px;
+        height: 200px;
+        padding: 10px;
+              
+    }
+    .player__list {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .player__item {
+        display: block;
+        width: 180px;
+        height: 112px;
+    }
+    .player__picture {
+        display: block;
+        position: relative;      
+        margin: 0;
+        padding: 0;
+    }
+    .form-hidden {
+        width: 180px;
+    }
+    
+   .foto-text {
+   position: absolute;
+   top: 50%;
+   left: 20%;
+   padding: 0;
+   margin: 0;
+   color: var(--accent-text);
+   }
+   .judges {
+    display: flex;
+   flex-wrap: nowrap;
+   padding: 10px;
+   }
+   .judges__list {
+    height: 260px;
+   }
 
     /*play*/

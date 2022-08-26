@@ -45,21 +45,21 @@
     </header>
      <!--Main-->
   <main>
-    <section class="user">
-        <div class="user-container">
+    <section class="user section">
+        <div class="user-container container">
             <hi class="user-container__title">Исходные данные</hi>
             <div class="player">
+                <h2 class="user-title">Игрок</h2>
                 <ul class="player__list list">
                     <li class="player__item">
                         <picture class="player__picture">
                             <img src="./images/img.png/teo.jpg" width="180" height="180" alt="Theo">
+                                                
+                        <p class="foto-text">место для фото</p>
                         </picture>
                     </li>
                     <li class="player__item">
-                        <form action="" class="player-form" autocomplete="off">
-                            <label class="form-hidden" for="user_foto">
-                                <input class="subscriber-name" type="file" name="name" id="user_foto" placeholder="foto"/>
-                            </label>
+                        <form action="" class="player-form" autocomplete="off">                           
                             <label class="form-hidden" for="user_name">
                                 <input class="subscriber-name" type="text" name="name" id="user_name" placeholder="name"/>
                             </label>
@@ -71,6 +71,7 @@
                 </ul>
             </div>
             <div class="judges">
+                <h2 class="user-title">Судьи</h2>
                 <ul class="judges__list list">
                     <li class="judges__item">
                         <picture class="player__picture">
@@ -80,7 +81,7 @@
                     <li class="judges__item">
                         <form action="" class="player-form" autocomplete="off">
                             <label class="form-hidden" for="user_job">
-                                <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Непосредственный руководитель"/>
+                                <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="Руководитель"/>
                             </label>
                         </form>
                     </li>
