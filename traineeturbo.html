@@ -45,15 +45,84 @@
     </header>
      <!--Main-->
   <main>
+    <!--USER-->
     <section class="user section">
-        <div class="user-container container">
-            <hi class="user-container__title">Исходные данные</hi>
+        <h1 class="user__title">Исходные данные</h1>
+        <div class="user-container container">           
+            <div class="ranks">
+                <h3 class="ranks__title">Звания</h2>
+                    <ul class="ranks__list list">
+                        <li class="ranks__item">
+                            <a href="" class="ranks__link"href aria-label="men" target="" >
+                                <svg class="ranks__icon" width="50" height="50">
+                                    <use href="./images/img.svg/ranks.svg.svg#icon-1"></use>
+                                </svg>
+                                <h3 class="ranks__text">Юзер</h3>
+                        </li>
+                        <li class="ranks__item">
+                            <a href="" class="ranks__link"href aria-label="robot" target="" >
+                                <svg class="ranks__icon" width="50" height="50">
+                                    <use href="./images/img.svg/ranks.svg.svg#icon-2"></use>
+                                </svg>
+                                <h3 class="ranks__text">Кандидат</h3>
+                        </li>
+                        <li class="ranks__item">
+                            <a href="" class="ranks__link"href aria-label="calendar" target="" >
+                                <svg class="ranks__icon" width="50" height="50">
+                                    <use href="./images/img.svg/ranks.svg.svg#icon-3"></use>
+                                </svg>
+                                <h3 class="ranks__text">Партнер</h3>
+                        </li>
+                        <li class="ranks__item">
+                            <a href="" class="ranks__link"href aria-label="rocket" target="" >
+                                <svg class="ranks__icon" width="50" height="50">
+                                    <use href="./images/img.svg/ranks.svg.svg#icon-4"></use>
+                                </svg>
+                                <h3 class="ranks__text">Игрок</h3>
+                        </li>
+                        <li class="ranks__item">
+                            <a href="" class="ranks__link"href aria-label="flag" target="" >
+                                <svg class="ranks__icon" width="50" height="50">
+                                    <use href="./images/img.svg/ranks.svg.svg#icon-5"></use>
+                                </svg>
+                                <h3 class="ranks__text">Призер</h3>
+                        </li>
+                        <li class="ranks__item">
+                            <a href="" class="ranks__link"href aria-label="crown" target="" >
+                                <svg class="ranks__icon" width="50" height="50">
+                                    <use href="./images/img.svg/ranks.svg.svg#icon-6"></use>
+                                </svg>
+                                <h3 class="ranks__text">Чемпион</h3>
+                        </li>
+                    </ul>             
+            </div>
+            <div class="info">
+                <ul class="info__list">
+                    <li class="ball">
+                        <h3 class="ball__title">Баллы</h3>
+                        <label class="ball__form" for="user_ball">
+                            <input class="ball__info" type="text" name="ball" id="user_ball" placeholder="Ball"/>
+                        </label>
+                    </li>
+                    <li class="olx">
+                        <h3 class="olx__title">OLX</h3>
+                        <select class="olx__variable">
+                            <option value="">Задание</option>
+                            <option value="">Помощь</option>
+                            <option value="">Документы</option>
+                            <option value="">Отчет</option>
+                            <option value="">Проект</option>
+                            <option value="">Волонтерство</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
             <div class="player">
-                <h2 class="user-title">Игрок</h2>
+                <h3 class="user-title">Игрок</h2>
                 <ul class="player__list list">
                     <li class="player__item">
                         <picture class="player__picture">
-                            <img src="./images/img.png/teo.jpg" width="180" height="180" alt="Theo">
+                            <img src="./images/img.png/teo.jpg" width="145" height="90" alt="Theo">
                                                 
                         <p class="foto-text">место для фото</p>
                         </picture>
@@ -66,16 +135,20 @@
                             <label class="form-hidden" for="user_job">
                                 <input class="subscriber-job" type="text" name="job" id="user_job" placeholder="job"/>
                             </label>
+                            <label class="form-hidden" for="user_job">
+                                <p class="player-form__text">Оклад</p>
+                                <input class="subscriber-salary" type="text" name="salary" id="user_salary" placeholder="salary"/>
+                            </label>
                         </form>
                     </li>
                 </ul>
             </div>
             <div class="judges">
-                <h2 class="user-title">Судьи</h2>
+                <h3 class="judges-title">Судьи</h2>
                 <ul class="judges__list list">
                     <li class="judges__item">
                         <picture class="player__picture">
-                            <img src="./images/img.png/teo.jpg" width="180" height="180" alt="Theo">
+                            <img src="./images/img.png/teo.jpg" width="120" height="120" alt="Theo">
                         </picture>
                     </li>
                     <li class="judges__item">
@@ -89,7 +162,7 @@
                 <ul class="judges__list list">
                     <li class="judges__item">
                         <picture class="player__picture">
-                            <img src="./images/img.png/teo.jpg" width="180" height="180" alt="Theo">
+                            <img src="./images/img.png/teo.jpg" width="120" height="120" alt="Theo">
                         </picture>
                     </li>
                     <li class="judges__item">
@@ -103,7 +176,7 @@
                 <ul class="judges__list list">
                     <li class="judges__item">
                         <picture class="player__picture">
-                            <img src="./images/img.png/teo.jpg" width="180" height="180" alt="Theo">
+                            <img src="./images/img.png/teo.jpg" width="120" height="120" alt="Theo">
                         </picture>
                     </li>
                     <li class="judges__item">
@@ -118,8 +191,14 @@
             </div>
         </div>
     </section>
+    <!--PLAY-->
+    <section class="play section">
+        <div class="play-container container" >
 
+        </div>
+    </section>
   </main>
+  <!--FOOTER-->
   <footer class="footer">
     <div class="footer-container container">
         <div class="footer-blog">
