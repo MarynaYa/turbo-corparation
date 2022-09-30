@@ -1262,7 +1262,51 @@
 }
 
 /* -- LIBRARY ---------*/
-
+/*Search */
+.search {
+    display: flex;
+    align-items: flex-end;  
+    align-items: flex-start;
+    height: 53px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.search__form {
+      display: flex;
+      width: 280px;
+      height: 20px;
+      margin: 0 auto;
+      border-bottom: 0.2px solid #f7f7f7bd;
+    }
+    .search__form:hover,
+    .search__form:focus {
+      border-bottom: 0.2px solid var(--accent-text)
+    }
+    .search__input {
+      border: none;
+      outline: none;
+      color: var(--text-color);
+      background: transparent;
+      width: 100%;
+    }
+    .search__img {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+    .search__img:hover {
+      width: 18px;
+      height: 18px;
+      fill: var(--accent-text);
+    }
+    .search__btn {
+      background-color: transparent;
+      border: none;
+      width: 20px;
+      outline: none;
+    }
+  
+  
 /*Filter*/
 .filter-list {
     display: flex;
@@ -1309,10 +1353,12 @@
         color: #FFFFFF;
     }
    /*Progect*/
+  
    .content-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;    
+    margin-left: 50px;    
+    margin-right: 50px;
    }
     .content-list_item {       
         width: 370px;
@@ -1366,7 +1412,7 @@
 .action {
    position: relative;
     width: 370px;
-    height: 295px;  
+    height: 244px;  
     overflow: hidden;
 }
 .poster-text-hover {
