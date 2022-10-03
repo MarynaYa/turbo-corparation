@@ -1249,6 +1249,7 @@
     padding: 0;    
 }
 .toy {
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
 
@@ -1264,7 +1265,7 @@
 .start,
 .finish { 
     width: 40px;
-    height: 97px;
+    height: 102px;
     text-align: center;   
 
     background-color: #ff0000;
@@ -1272,21 +1273,21 @@
     color: #FFFFFF;
 }
 .road-img {
-    position: relative;
+    
     width: 1100px;
 }
 .finish {
     position: absolute;
-    bottom: -894px;
-    left: 58%;
+    bottom: 0px;
+    left: 61%;
 }
 .month-btn {
 position: absolute;
-bottom: -633px;
-left: 70%;
+bottom: 42%;
+left: 73%;
 
 width: 30px;
-height: 97px;
+height: 102px;
 text-align: center;
 
 background-color: yellow;
@@ -1294,13 +1295,14 @@ border-color: transparent;
 color: #FF0000;
 }
 /*----modal task--*/  
-.task-button {
-    position: absolute;
-    bottom: -330px;
-    left: 30%;
-    width: 100px;
-    height: 30px;
-
+.task-button-one,
+.task-button-two,
+.task-button-three,
+.task-button-four,
+.task-button-five,
+.task-button-six,
+.task-button-seven,
+.task-button-eaght {
     background-color: yellow;
     border-color: transparent;
     border-radius: 3px;
@@ -1308,7 +1310,51 @@ color: #FF0000;
     font-size: 14px;
     line-height: 1.25;
 
+    width: 100px;
+    height: 30px;
 }
+.task-button-one {
+    position: absolute;
+    top: 30px;
+    left: 30%;  
+}
+.task-button-two {
+    position: absolute;
+    top: 30px;
+    left: 60%; 
+}
+.task-button-three {
+    position: absolute;
+    top: 60px;
+    left: 85%; ;
+}
+.task-button-four {
+    position: absolute;
+    top: 278px;
+    left: 85%;    
+}
+.task-button-five {
+    position: absolute;
+    top: 285px;
+    left: 60%;   
+}
+.task-button-six {
+    position: absolute;
+    top: 285px;
+    left: 30%;
+  }
+.task-button-seven {
+    position: absolute;
+    top: 480px;
+    left: 14%;  
+}
+.task-button-eaght {
+    position: absolute;
+    top: 550px;
+    left: 50%;  
+}
+
+
 .task {
     position: fixed;      
     top: 50%;
