@@ -38,6 +38,8 @@
             <li class="header-nav__item">
                 <a href="./traineeturbo.html" class="header-nav__link current">Тео-стажер</a></li>
             <li class="header-nav__item">
+                    <a href="" class="header-nav__link">Тео-спец</a></li>
+            <li class="header-nav__item">
                 <a href="./library.html" class="header-nav__link">Библиотека</a></li>           
         </ul>
     </div> 
@@ -227,21 +229,69 @@
         </div>
         <div class="toy">
         <picture class="toy__picture">
-            <img src="./images/img.png/teo.jpg" width="145" height="90" alt="Theo">
-
+            <img src="./images/img.png/teo-play.jpg" width="145" height="90" alt="Theo">
+        </picture>
         <div class="toy__box">
-            <button class="start" data-start>START</button>
-            <picture class="road">
-                <img src="./images/img.png/basic — копия 1.jpg" alt="road">
+            <button class="start" data-start>
+                <span><th>S<br>T<br>A<br>R<br>T</th></span>
+                </button>
+            <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/img.png/road1.jpg 1x,
+                    ./images/img.png/road2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                  ./images/img.png/road1.jpg 1x,
+                  ./images/img.png/road2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px )"
+                  srcset="
+                  
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="road-img"
+                  sizes="(min-width: 1200px) 1000px, (min-width: 768px) 650px, (max-width: 767px) 450px, 100vw"
+                  src="./images/img.png/road1.jpg"
+                  alt="сердце"             
+                />
             </picture>
             <ul class="toy__month list">
                 <li class="toy__item">
                     <ul class="week-list list">
-                        <li class="week-list__item"></li>
-                        <li class="week-list__item"></li>
+                        <li class="week-list__item">
+                            <button class="task-button" data-task-open>Task 1</button>
+                            <div class="task is-hidden" data-task>                                
+                                    <strong class="task__text">Пожалуйста, выполните одну/две из предоставленных задач</strong>
+                                      <a href="">Проф.тестирование. 5 вопросов, 1 вопрос/ 1 балл</a>
+                                      <a href="">Личностное тестирование. 1 тест/ 3 балла</a>
+                                      <a href="">Решите задачки. 1 задача / 1 балл</a>
+                                
+                                <buttom class="task__btn" type="button" data-task-close>
+                                    <svg class="log__icon" width="18" height="18">
+                                        <use href="./images/img.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                                    </svg>
+                                </buttom>
+                        </li>
+                        <li class="week-list__item">
+                            <button></button>
+                        </li>
                         <li class="week-list__item"></li>
                         <li class="week-list__item"></li>
                     </ul>
+                    <button class="month-btn">
+                        <span><th>r<br>o<br>u<br>n<br>d</th></span>
+                        </button>
                 </li>
                 <li class="toy__item">
                     <ul class="week-list list">
@@ -252,7 +302,9 @@
                     </ul>
                 </li>
             </ul>
-            <button class="finish">FINISH</button>
+            <button class="finish">
+                <span><th>F<br>i<br>n<br>i<br>sh</th></span>
+                </button>
         </div>
     </div>
 
